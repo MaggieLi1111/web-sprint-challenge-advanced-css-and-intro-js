@@ -13,13 +13,20 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {  
 margin: 0;  
-padding: 0;  
-border: 1px solid black;  
+padding: 0;   
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
+
 /*GENERAL STYLES*/
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    /* border:1px solid black; */
+}
 html{
     font-size:62.5%;
 }
@@ -138,26 +145,44 @@ button:hover{
 @media(max-width:500px){
 
     /*Artists Section Styles */
-    .artists-container{
-      width:100%;
+    body{
+        font-size:1.2rem;
+        line-height: 1;
         
+    }
+    h1, p, .name, .bio {	       
+        margin: 4%;	
+    }	
+    h1{
+        font-size:3rem;
+    }
+    a {	      
+        font-size:1.4rem;	
+    }	
+	.title-container div {	
+        background-position: center;
+        background-size:cover;
+        width:90%;
+        display:flex;
+        height:60vh;
+        margin:5% 0;
+    }	
+    .artists-container{
+      display:flex;
+      flex-direction: column;
+      align-items:center;
     }
     
     .artist{
-      width:100%;
+      width:60%;
+      flex-direction:column;
 
     }
-
-    img {	
-        object-fit: fit;
-  	
-        margin: 2%;	
-        margin-top: 4%;	
+    .artist img {
+        width:70%;
+        height:30%;
         margin-left: auto;	
         margin-right: auto;	
         border-radius: 2%;	
-    }	
-    img:hover {	
-        opacity: 80%;	
     }	
 }

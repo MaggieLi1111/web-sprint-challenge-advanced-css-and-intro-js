@@ -31,8 +31,10 @@ Ensure that all content can be accessed with the keyboard alone in a logical way
 Include proper alt text for images;
 Make links meaningful.
 
+
 3. How would you explain the concept of a variable to someone new to programming?
 variable in javascript means that can hold and store the data value and also can be changer later on for different operations and algorithms. A variable can only contain one value at a time. Variable can be of any data type, such as string, number, boolean, array, object, function, null or undefined. 
+
 
 4. What is the purpose of using functions in code?
 It will be much more convinient and sufficient while using functions in code, they are good alternative of repeating blocks of code. We can reuse the code, break the code in smaller functions so that keep the code clean,readable, and organized.

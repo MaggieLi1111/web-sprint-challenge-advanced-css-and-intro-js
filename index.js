@@ -219,6 +219,7 @@ console.log(artists[2].bio);
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
 artists[8].name = "Vincent Van Gogh";
+console.log(artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -287,13 +288,17 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  array.push({id: 20,
-    name: "Your Name Here", 
-    years: "Your Birth Year - current day",
-    genre: "Web Design", 
-    nationality: "Your Nationality Here",
-    bio: "Add 1-2 sentences (or use lorem ipsum)"
-  });
+  array.push(
+    {
+      id: 20,
+      name: "Your Name Here", 
+      years: "Your Birth Year - current day",
+      genre: "Web Design", 
+      nationality: "Your Nationality Here",
+      bio: "Add 1-2 sentences (or use lorem ipsum)"
+    }
+  );
+  return array;
 }
 
 console.log(addArtist(artists));
@@ -310,9 +315,9 @@ function lotsOfArt(array) {
   for(let i = 0; i<array.length ;i++){
     if(array[i].paitings > 100){
       newArray.push(array[i].name);
-    }
-    return newArray;
+    }   
   }
+  return newArray;
 }
 
 console.log(lotsOfArt(artists));
